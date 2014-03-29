@@ -1,6 +1,6 @@
 {
   "name": "language-flex",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Atom support for Apache Flex",
   "repository": "https://github.com/simongregory/language-flex",
   "license": "MIT",
