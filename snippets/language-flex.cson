@@ -1,0 +1,89 @@
+'.source.actionscript.3.embedded.binding':
+  '&':
+    'prefix': '&'
+    'body': '&amp;'
+  '<':
+    'prefix': '<'
+    'body': '&lt;'
+  '>':
+    'prefix': '>'
+    'body': '&gt;'
+'.text.xml.mxml .meta.tag.component.xml.mxml':
+  '=':
+    'prefix': '='
+    'body': '="$0"'
+'.text.xml.mxml':
+  'CDATA':
+    'prefix': 'cdata'
+    'body': '<![CDATA[$0]]>'
+  'Short mx: Tag':
+    'prefix': '>'
+    'body': '<mx:${1:name} />'
+'.source.actionscript.3':
+  '[Bindable]':
+    'prefix': 'bind'
+    'body': '[Bindable${1:(event="${2:eventName}")}]'
+  '[Event]':
+    'prefix': 'event'
+    'body': '[Event(name="${1:eventName}"${2:, type="flash.events.Event"})]'
+  '[Style]':
+    'prefix': 'style'
+    'body': '[Style(name="${1:styleName}", type="${2:String}", inherit="${4:no}"${5:, enumeration="a,b,c", format="Length/Color", arrayType="String"})]'
+  'commitProperties':
+    'prefix': 'commitProperties'
+    'body': 'override protected function commitProperties():void\n{\n\tsuper.commitProperties();\n\t$0\n}\n'
+  'createChildren':
+    'prefix': 'createChildren'
+    'body': 'override protected function createChildren():void\n{\n\tsuper.createChildren();\n\t$0\n}\n'
+  'measure':
+    'prefix': 'measure'
+    'body': 'override protected function measure():void\n{\n\tsuper.measure();\n\n\tmeasuredWidth  = measuredMinWidth  = $1;\n\tmeasuredHeight = measuredMinHeight = $2;\n}\n'
+  'updateDisplayList':
+    'prefix': 'updateDisplayList'
+    'body': 'override protected function updateDisplayList(unscaledWidth:Number, unscaledHeight:Number):void\n{\n\tsuper.updateDisplayList(unscaledWidth, unscaledHeight);\n\n\t$0\n}'
+'.meta.tag.component.xml.mxml':
+  'border Style Width Color':
+    'prefix': 'border'
+    'body': 'borderStyle="${1:solid|none}" borderWidth="${2:1}" borderColor="${3:0xCCCCCC}"'
+  'border Style Width':
+    'prefix': 'border'
+    'body': 'borderStyle="${1:solid|none}" borderWidth="${2:1}"'
+  'border Style':
+    'prefix': 'border'
+    'body': 'borderStyle="${1:solid|none}"'
+  'height':
+    'prefix': 'height'
+    'body': 'height="${1:100%}"'
+  'horizontalAlign':
+    'prefix': 'horizontalAlign'
+    'body': 'horizontalAlign="${1:left}"'
+  'id':
+    'prefix': 'id'
+    'body': 'id="$1"'
+  'padding Left Right':
+    'prefix': 'pad'
+    'body': 'paddingLeft="$1" paddingRight="$1"'
+  'padding Left Top Right Bottom':
+    'prefix': 'pad'
+    'body': 'paddingLeft="$1" paddingTop="$1" paddingRight="$1" paddingBottom="$1"'
+  'padding Top Bottom':
+    'prefix': 'pad'
+    'body': 'paddingTop="$1" paddingBottom="$1"'
+  'styleName':
+    'prefix': 'styleName'
+    'body': 'styleName="$1"'
+  'verticalAlign':
+    'prefix': 'verticalAlign'
+    'body': 'verticalAlign="${1:middle}"'
+  'width':
+    'prefix': 'width'
+    'body': 'width="${1:100%}"'
+  'x':
+    'prefix': 'x'
+    'body': 'x="${1:0}"'
+  'xmlns':
+    'prefix': 'xmlns'
+    'body': 'xmlns:${1:mx}="${2:http://www.adobe.com/2006/mxml}" '
+  'y':
+    'prefix': 'y'
+    'body': 'y="${1:0}"'
